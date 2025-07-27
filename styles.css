@@ -1,0 +1,166 @@
+:root {
+    --font-size: 100px;
+    --bgr-inicial: #82FF9E;
+    --border-inicial: #A9FBC3;
+    --color-letra-inicial: #002500; 
+}
+
+body {
+    box-sizing: border-box;
+    background-color: #fff;
+    margin: 0;
+}
+
+header {
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+header div {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin-top: 50px;
+}
+
+header div button {
+    font-size: 20px;
+    padding: 10px 20px;
+    border-radius: 10px;
+    background-color: #7C3238;
+    color: white;
+    border: 0;
+    cursor: pointer;
+}
+
+header div button:hover {
+    font-size: 20px;
+    padding: 10px 20px;
+    border-radius: 10px;
+    background-color: white;
+    color: #7C3238;
+    border: 2px solid #7C3238;
+}
+
+header h1 {
+    font-size: var(--font-size);
+    color: #720E07;
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    margin: 0;
+    padding: 5px;
+}
+
+main {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin: 20px;
+    padding: 0px 50px;
+}
+
+.short-stack-regular {
+    font-family: "Short Stack", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.londrina-outline-regular {
+    font-family: "Londrina Outline", sans-serif;
+    font-weight: 1000;
+    font-style: normal;
+}
+
+/* <weight>: Use a value from 300 to 700 */
+/* <uniquifier>: Use a unique and descriptive class name */
+.fredoka-600 {
+    font-family: "Fredoka", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    font-variation-settings:
+        "wdth" 100;
+}
+
+.barriecito-regular {
+    font-family: "Barriecito", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+.flip-card {
+    background-color: transparent;
+    width: 300px;
+    height: 350px;
+    perspective: 1000px;
+    /* Remove this if you don't want the 3D effect */
+    margin-bottom: 40px;
+}
+
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+    box-sizing: border-box;
+    border: 10px solid var(--border-inicial);
+    border-radius: 10px;
+    box-shadow: 5px 10px #f1f1f1;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-card-front,
+.flip-card-back {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    /* Safari */
+    backface-visibility: hidden;
+    overflow: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-card-front {
+    background-color: var(--bgr-inicial);
+    color: var(--color-letra-inicial);
+}
+
+/* Style the back side */
+.flip-card-back {
+    background-color: white;
+    color: black;
+    transform: rotateY(180deg);
+}
+
+.letter-front {
+    font-size: 140px;
+    margin: auto 0;
+    padding: 0;
+    margin: 0;
+}
+
+.text-back,
+.text-back h1 {
+    padding: 0;
+    margin: 0;
+}
