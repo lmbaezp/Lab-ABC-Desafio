@@ -1,8 +1,9 @@
 const btnClaros = document.getElementById('btnClaros');
 const btnOscuros = document.getElementById('btnOscuros');
 const btnInicial = document.getElementById('btnInicial');
-const letra = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I'];
-const texto = ['Á R B O L', 'B A L Ó N', 'C A R R O', 'D E L F Í N', 'E S T R E L L A', 'F L O R', 'G A T O', 'H U E V O','I G U A N A'];
+const letra = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I','J', 'K', 'L', 'M', 'N', 'Ñ', 'O', 'P', 'Q'];
+const texto = ['Á R B O L', 'B A L Ó N', 'C A R R O', 'D E L F Í N', 'E S T R E L L A', 'F L O R', 'G A T O', 'H U E V O','I G U A N A',
+                'J U G O', 'K I W I', 'L Á P I Z', 'M A N O', 'N U B E S', 'P I Ñ A', 'O S O', 'P A T O', 'Q U E S O'];
 const colorInicial = ['#82FF9E', '#A9FBC3','#002500'];
 const coloresClaros = [
                         ['#8A4FFF','#C3BEF7','#474350'],
